@@ -1,0 +1,27 @@
+
+body{
+   background-color: #f0f6ff;
+   padding-top: 5rem;
+}
+
+.head-aid{
+   text-align: center;
+   color: #3b365f;
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+.aid{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+}
+.aid h2{
+   color: #3b365f;
+   font-size: 1rem;
+   font-weight: 600;
+}
+.aid-info{
+  padding: 0.1rem;
+  font-size: 1rem;
+}
