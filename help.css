@@ -7,7 +7,7 @@ body{
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   padding: 5rem;
+   padding: 5rem 0;
 }
 
 .help h1{
@@ -17,12 +17,13 @@ body{
 }
 .help-btn{
    display: flex;
+   flex-direction: column;
    margin: 1rem 0;
    gap: 2rem;
 }
 
 .btn-call, .btn-aid, .btn-guide{
-   padding: 1.5rem;
+   padding: 1rem;
    border: none;
    background-color: #3b365f;
    color: #88a3ce;
@@ -33,4 +34,18 @@ body{
    color: #f0f6ff;
    text-decoration: none;
    font-size: 1rem;
+}
+
+.btn-call a:hover, .btn-aid a:hover, .btn-guide a:hover{
+   color: #88a3ce;
+}
+
+@media (min-width:768px) {
+   .help-btn{
+      display: flex;
+      flex-direction: row;
+   }
+   .btn-call, .btn-aid, .btn-guide{
+      padding: 1.5rem;
+   }
 }

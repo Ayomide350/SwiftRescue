@@ -12,9 +12,9 @@ body{
 }
 .aid{
    display: flex;
+   flex-direction: column;
    align-items: center;
    justify-content: center;
-   gap: 0.5rem;
 }
 .aid h2{
    color: #3b365f;
@@ -24,4 +24,11 @@ body{
 .aid-info{
   padding: 0.1rem;
   font-size: 1rem;
+}
+
+@media (min-width:768px) {
+   .aid{
+      display: flex;
+      
+   }
 }
