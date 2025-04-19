@@ -6,12 +6,17 @@
 
 body{
    background-color: #f0f6ff;
+  
 }
 
 nav{
    color: #3b365f;
    font-weight: 600;
    margin-top: 2rem;
+}
+
+section{
+   margin-top: 5rem;
 }
 .hero{
    display: flex;
@@ -66,10 +71,101 @@ nav{
    color: #f0f6ff;
 }
 
+.head-aid{
+   text-align: center;
+   color: #3b365f;
+   font-size: 2.5rem;
+   font-weight: 700;
+   margin-bottom: 2rem;
+}
+.aid{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.aid h2{
+   color: #3b365f;
+   font-size: 1rem;
+   font-weight: 600;
+}
+.aid-info{
+  padding: 0.1rem;
+  font-size: 1rem;
+}
+
+.help{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 5rem 0;
+}
+
+.help h1{
+   color: #3b365f;
+   font-size: 2.5rem;
+   font-weight: 600;
+   margin-bottom: 2rem;
+}
+.help-btn{
+   display: flex;
+   flex-direction: column;
+   margin: 1rem 0;
+   gap: 2rem;
+}
+
+.btn-call, .btn-aid, .btn-guide{
+   padding: 1rem;
+   border: none;
+   background-color: #3b365f;
+   color: #88a3ce;
+   border-radius: 0.5rem;
+}
+
+.btn-call a, .btn-aid a, .btn-guide a{
+   color: #f0f6ff;
+   text-decoration: none;
+   font-size: 1rem;
+}
+
+.btn-call a:hover, .btn-aid a:hover, .btn-guide a:hover{
+   color: #88a3ce;
+}
+
+h1{
+   text-align: center;
+   font-size: 2.5rem;
+   color: #3b365f;
+}
+
+.search{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.search-info{
+   padding: 0.1rem;
+   font-size: 1rem;
+}
+
 @media (min-width:768px) {
    .hero-btn{
       display: flex;
       flex-direction: row;
       gap: 2rem;
+   }
+
+   .aid{
+      display: flex;
+      
+   }
+   .help-btn{
+      display: flex;
+      flex-direction: row;
+   }
+   .btn-call, .btn-guide{
+      padding:  0.1rem 2rem;
    }
 }
