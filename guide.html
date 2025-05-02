@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftRescue App</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="guide.css" />  
+</head>
+<body>
+  <!-- Fixed Header with Navigation -->
+  <header>
+    <nav>
+      <div class="logo">SwiftRescue</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Fixed Sub-header: Sidebar Toggle & Language Toggle -->
+  <div class="sub-header">
+    <button id="sidebar-toggle">List &#8592;</button>
+    <div class="language-toggle">
+      <label for="language-switch">Language:</label>
+      <label class="switch">
+        <input type="checkbox" id="language-switch">
+        <span class="slider"></span>
+      </label>
+      <span id="language-label">English</span>
+    </div>
+  </div>
+  
+  <!-- Main Layout Container -->
+  <div class="layout">
+    <!-- Sidebar (used in desktop and mobile overlay) -->
+    <aside id="sidebar">
+      <div class="sidebar-search">
+        <input type="text" id="sidebar-search" placeholder="Search videos...">
+        <ul id="sidebar-suggestions"></ul>
+      </div>
+      <h2>Video List</h2>
+      <ul class="video-nav">
+        <li data-target="video1" data-english="Video 1: Bleeding Control" data-hausa="Bidiyo 1: Sarrafa Zubar Jini">Video 1</li>
+        <li data-target="video2" data-english="Video 2: Airway Maintenance" data-hausa="Bidiyo 2: Kulawar Huhu">Video 2</li>
+        <li data-target="video3" data-english="Video 3: CPR Basics" data-hausa="Bidiyo 3: Asalin CPR">Video 3</li>
+        <li data-target="video4" data-english="Video 4: Fracture Stabilization" data-hausa="Bidiyo 4: Daidaita Karyewar Kashi">Video 4</li>
+        <li data-target="video5" data-english="Video 5: Burn Treatment" data-hausa="Bidiyo 5: Maganin Wuta">Video 5</li>
+        <li data-target="video6" data-english="Video 6: Shock Management" data-hausa="Bidiyo 6: Kulawar Shock">Video 6</li>
+        <li data-target="video7" data-english="Video 7: Spinal Injury Care" data-hausa="Bidiyo 7: Kulawar Raunin Kashi">Video 7</li>
+      </ul>
+    </aside>
+    
+    <!-- Main Content Area -->
+    <div class="content">
+      <div class="emergency">
+        <a href="tel:911" class="emergency-button">Call Emergency</a>
+      </div>
+      
+      <!-- Video Section 1 -->
+      <section id="video1" class="video-section">
+        <h3 class="video-heading" data-english="Video 1: Bleeding Control" data-hausa="Bidiyo 1: Sarrafa Zubar Jini">
+          Video 1: Bleeding Control
+        </h3>
+        <video controls>
+          <source src="video1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video1-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: To control bleeding, apply firm pressure, elevate the wound, and use a clean dressing." data-hausa="Jagoran Taimakon Gaggawa: Don dakatar da zubar jini, a matsa da ƙarfi, daga rauni sama, sannan a rufe da abin tsabta.">
+          First Aid Guide: To control bleeding, apply firm pressure, elevate the wound, and use a clean dressing.
+        </p>
+      </section>
+      
+      <!-- Video Section 2 -->
+      <section id="video2" class="video-section">
+        <h3 class="video-heading" data-english="Video 2: Airway Maintenance" data-hausa="Bidiyo 2: Kulawar Huhu">
+          Video 2: Airway Maintenance
+        </h3>
+        <video controls>
+          <source src="video2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video2-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: Ensure the airway is clear by checking for obstructions and positioning the head appropriately." data-hausa="Jagoran Taimakon Gaggawa: Tabbatar hanyar numfashi babu shinge ta hanyar bincika kuma daidaita kan yadda ya dace.">
+          First Aid Guide: Ensure the airway is clear by checking for obstructions and positioning the head appropriately.
+        </p>
+      </section>
+      
+      <!-- Video Section 3 -->
+      <section id="video3" class="video-section">
+        <h3 class="video-heading" data-english="Video 3: CPR Basics" data-hausa="Bidiyo 3: Asalin CPR">
+          Video 3: CPR Basics
+        </h3>
+        <video controls>
+          <source src="video3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video3-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: Learn the proper chest compressions and rescue breathing techniques essential for CPR." data-hausa="Jagoran Taimakon Gaggawa: Koyi yadda ake matsa kirji da hanyoyin numfashi na ceto masu muhimmanci wajen CPR.">
+          First Aid Guide: Learn the proper chest compressions and rescue breathing techniques essential for CPR.
+        </p>
+      </section>
+      
+      <!-- Video Section 4 -->
+      <section id="video4" class="video-section">
+        <h3 class="video-heading" data-english="Video 4: Fracture Stabilization" data-hausa="Bidiyo 4: Daidaita Karyewar Kashi">
+          Video 4: Fracture Stabilization
+        </h3>
+        <video controls>
+          <source src="video4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video4-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: Immobilize the injured limb using splints and avoid unnecessary movement." data-hausa="Jagoran Taimakon Gaggawa: Tsayar da gaɓar da ta ji rauni tare da amfani da kayan goyon baya, ka guji motsi mara mahimmanci.">
+          First Aid Guide: Immobilize the injured limb using splints and avoid unnecessary movement.
+        </p>
+      </section>
+      
+      <!-- Video Section 5 -->
+      <section id="video5" class="video-section">
+        <h3 class="video-heading" data-english="Video 5: Burn Treatment" data-hausa="Bidiyo 5: Maganin Wuta">
+          Video 5: Burn Treatment
+        </h3>
+        <video controls>
+          <source src="video5.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video5-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: Cool the burn under running water and cover it with a sterile bandage." data-hausa="Jagoran Taimakon Gaggawa: Sanyaya wuta karkashin ruwan gudu, sannan a rufe da bandaji mai tsabta.">
+          First Aid Guide: Cool the burn under running water and cover it with a sterile bandage.
+        </p>
+      </section>
+      
+      <!-- Video Section 6 -->
+      <section id="video6" class="video-section">
+        <h3 class="video-heading" data-english="Video 6: Shock Management" data-hausa="Bidiyo 6: Kulawar Shock">
+          Video 6: Shock Management
+        </h3>
+        <video controls>
+          <source src="video6.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video6-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: Recognize the signs of shock and keep the patient lying down with elevated legs." data-hausa="Jagoran Taimakon Gaggawa: Gane alamun shock sannan a sa mara lafiya ya kwanta tare da daga ƙafafunsa.">
+          First Aid Guide: Recognize the signs of shock and keep the patient lying down with elevated legs.
+        </p>
+      </section>
+      
+      <!-- Video Section 7 -->
+      <section id="video7" class="video-section">
+        <h3 class="video-heading" data-english="Video 7: Spinal Injury Care" data-hausa="Bidiyo 7: Kulawar Raunin Kashi">
+          Video 7: Spinal Injury Care
+        </h3>
+        <video controls>
+          <source src="video7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <audio class="hausa-audio" src="video7-hausa.mp3"></audio>
+        <p class="video-guide" data-english="First Aid Guide: Do not move the patient; stabilize the head and neck and seek immediate professional help." data-hausa="Jagoran Taimakon Gaggawa: Kada a motsa mara lafiya; daidaita kai da wuya sannan a nemi taimakon gaggawa.">
+          First Aid Guide: Do not move the patient; stabilize the head and neck and seek immediate professional help.
+        </p>
+      </section>
+    </div>
+  </div>
+  
+  <!-- Fixed Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>
+        Follow us on:
+        <a href="#">Twitter</a> |
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a>
+      </p>
+      <p>&copy; 2025 SwiftRescue. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script src="guide.js">
+    
+  </script>
+</body>
+</html>
