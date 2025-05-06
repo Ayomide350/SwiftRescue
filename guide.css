@@ -1,0 +1,265 @@
+/* Reset & Base */
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        /* leave room for fixed header & footer */
+        padding-top: 70px;
+        padding-bottom: 60px;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      ul {
+        list-style: none;
+      }
+  
+      /* Fixed Header with Navigation (includes hamburger for mobile) */
+      header {
+        background: #007BFF;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+      }
+      .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #fff;
+      }
+      .nav-links {
+        display: flex;
+      }
+      .nav-links li {
+        margin-left: 20px;
+      }
+      .nav-links li a {
+        color: #fff;
+      }
+      .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+      }
+      .hamburger span {
+        height: 3px;
+        width: 25px;
+        background: #fff;
+        margin-bottom: 4px;
+        border-radius: 5px;
+      }
+  
+      /* Fixed Footer */
+      footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 15px 20px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+  
+      /* Fixed Sub-header: Contains Language Toggle & Sidebar Toggle */
+      .sub-header {
+        background: #f9f9f9;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        z-index: 900;
+      }
+      .language-toggle {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+      }
+      .language-toggle label {
+        margin-right: 10px;
+      }
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 24px;
+      }
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 24px;
+      }
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 20px;
+        width: 20px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+      input:checked + .slider {
+        background-color: #2196F3;
+      }
+      input:checked + .slider:before {
+        transform: translateX(26px);
+      }
+      #language-label {
+        font-weight: bold;
+      }
+      /* Sidebar Toggle Button: Initially displays "List ←" */
+      #sidebar-toggle {
+        background: transparent;
+        border: none;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        /* Initially positioned at the left in mobile view */
+      }
+      
+      /* Main Content Container (desktop view) */
+      .container {
+        max-width: 1200px;
+        margin: 90px auto 20px auto;
+        padding: 20px;
+      }
+      .content {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 15px;
+      }
+      .video-section {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      .video-section h3 {
+        margin-bottom: 10px;
+      }
+      .video-section video {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      .emergency {
+        margin: 15px 0;
+      }
+      .emergency-button {
+        background: #dc3545;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+  
+      /* Sidebar (same element used for desktop and mobile) */
+      aside {
+        background: #fff;
+        border: 1px solid #ddd;
+        padding: 15px;
+      }
+      /* In desktop view, sidebar is static on the left */
+      .sidebar-search {
+        margin-bottom: 10px;
+      }
+      .sidebar-search input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      .sidebar-search ul {
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        max-height: 150px;
+        overflow-y: auto;
+        display: none;
+        background: #fff;
+      }
+      .sidebar-search ul li {
+        padding: 8px;
+        cursor: pointer;
+      }
+      .sidebar-search ul li:hover {
+        background: #f0f0f0;
+      }
+      aside h2 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+      }
+      .video-nav li {
+        padding: 8px;
+        cursor: pointer;
+        border-bottom: 1px solid #eee;
+      }
+      .video-nav li:hover {
+        background: #f0f0f0;
+      }
+      
+      /* Desktop Layout: Sidebar on the left of main content */
+      @media (min-width: 769px) {
+        .layout {
+          display: grid;
+          grid-template-columns: 300px 1fr;
+          gap: 20px;
+          padding: 20px;
+        }
+      }
+      
+      /* Mobile Styles: Sidebar becomes an overlay that drops on top of the main content */
+      @media (max-width: 768px) {
+        .layout {
+          padding: 10px;
+        }
+        aside {
+          display: none;
+          position: fixed;
+          top: 90px;  /* below fixed sub-header */
+          left: 0;
+          right: 0;
+          background: #fff;
+          z-index: 1100;
+          border-bottom: 1px solid #ddd;
+          padding: 15px;
+        }
+        /* Sidebar toggle button positioned at the left in sub-header */
+        #sidebar-toggle {
+          order: -1;
+          margin-right: auto;
+        }
+      }

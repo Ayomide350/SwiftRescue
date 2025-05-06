@@ -150,6 +150,27 @@ h1{
    font-size: 1rem;
 }
 
+/* Button Styles */
+.btn-aid, .btn-help, .btn-call, .btn-guide {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aid:hover, .btn-help:hover, .btn-call:hover, .btn-guide:hover {
+    background-color: #0056b3;
+}
+
+.btn-aid a, .btn-help a, .btn-call a, .btn-guide a {
+    color: white;
+    text-decoration: none;
+}
+
 @media (min-width:768px) {
    .hero-btn{
       display: flex;
