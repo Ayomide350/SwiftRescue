@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftRescue</title>
+    <link rel="stylesheet" href="tts.css">
+</head>
+<body>
+     <h1>SwiftRescue - Text-to-Speech First Aid Guide</h1>
+    <div class="instruction">
+        <h2>Burn Treatment Instructions</h2>
+        <p id="burnText">
+            Cool the burn with cool(not cold) running water for 20 minutes. <br>
+            Remove any tight clothing or jewelry near the burn site. <br>
+            Cover burn with a clean, non-stick dressing. <br>
+            Do not pop blisers. <br>
+            Seek medical help for severe or large burns.
+        </p>
+        <button onclick="speakText('burnText')">🔊 Speak</button>
+        <button onclick="stopSpeech()">⏹️ Stop</button>
+    </div>
+    <div class="instruction">
+        <h2>Bleeding Control Instructions</h2>
+        <p id="bleedText">
+             Apply pressure with a clean cloth to stop bleeding. <br>
+             If possible, raise the injured area above the heart. <br>
+             Do not remove the cloth if it soaks through; add more layers.
+        </p>
+        <button onclick="speakText('bleedText')">🔊 Speak</button>
+        <button onclick="stopSpeech()">⏹️ Stop</button>
+    </div>
+    <div class="instruction">
+        <h2>CPR Instructions</h2>
+        <p id="cpr-Text">
+            If the person is unresponsive and not breathing, call emergency services and begin CPR. <br>
+            Push hard and fast in the center of the chest at 100–120 compressions per minute. 
+        </p>
+        <button onclick="speakText('cpr-Text')">🔊 Speak</button>
+        <button onclick="stopSpeech()">⏹️ Stop</button>
+    </div>
+    <div class="instruction">
+        <h2>Fracture Stabilization Instructions</h2>
+        <p id="frac-Text">
+           If a fracture is suspected, avoid moving the injured limb. <br>
+           Immobilize it with a splint or sling in the position found. <br>
+           Apply padding around the fracture to reduce movement. <br>
+           Do not try to realign the bone. <br>
+           Seek medical help immediately.
+        </p>
+        <button onclick="speakText('frac-Text')">🔊 Speak</button>
+        <button onclick="stopSpeech()">⏹️ Stop</button>
+    </div>
+    <div class="instruction">
+        <h2>Shock Management Instructions</h2>
+        <p id="shock-Text">
+            Lay the person down and elevate their legs unless there's an injury that prevents it. <br>
+            Keep them warm and comfortable. <br>
+            Loosen tight clothing and reassure them. <br>
+            Do not give food or drink. <br>
+            Seek emergency medical attention promptly.
+        </p>
+        <button onclick="speakText('shock-Text')">🔊 Speak</button>
+        <button onclick="stopSpeech()">⏹️ Stop</button>
+    </div>
+    <div class="instruction">
+        <h2>Airway Maintenance Instructions</h2>
+        <p id="air-Text">
+          If the person is unconscious, check for breathing. <br>
+          Tilt the head back slightly and lift the chin to open the airway. <br>
+          Remove any visible obstructions from the mouth. <br>
+          If not breathing, begin CPR and call for emergency help immediately.
+        </p>
+        <button onclick="speakText('air-Text')">🔊 Speak</button>
+        <button onclick="stopSpeech()">⏹️ Stop</button>
+    </div>
+    <script src="tts.js"></script>
+</body>
+</html>
+
+
+  
+        
+   
